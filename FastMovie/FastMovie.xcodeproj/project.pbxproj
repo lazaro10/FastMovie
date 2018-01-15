@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC15439EBB8C8414091B6D9F /* Pods_FastMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
 		ECC26259200D20240025DCA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26258200D20240025DCA1 /* ViewController.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85BA3B34E9DD3B195F76BD62 /* Pods-FastMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.release.xcconfig"; sourceTree = "<group>"; };
 		ECC26253200D20240025DCA1 /* FastMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC26256200D20240025DCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC26258200D20240025DCA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC15439EBB8C8414091B6D9F /* Pods_FastMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3498AE56D39CCD46607E394 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E332F5D0B3C11331AE26429A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85BA3B34E9DD3B195F76BD62 /* Pods-FastMovie.debug.xcconfig */,
+				CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ECC2624A200D20240025DCA1 = {
 			isa = PBXGroup;
 			children = (
 				ECC26255200D20240025DCA1 /* FastMovie */,
 				ECC2626A200D20240025DCA1 /* FastMovieTests */,
 				ECC26254200D20240025DCA1 /* Products */,
+				E332F5D0B3C11331AE26429A /* Pods */,
+				D3498AE56D39CCD46607E394 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC26270200D20240025DCA1 /* Build configuration list for PBXNativeTarget "FastMovie" */;
 			buildPhases = (
+				EC6579123DF6A58A13E24E53 /* [CP] Check Pods Manifest.lock */,
 				ECC2624F200D20240025DCA1 /* Sources */,
 				ECC26250200D20240025DCA1 /* Frameworks */,
 				ECC26251200D20240025DCA1 /* Resources */,
+				D28C97F0861D9AFAF45EB803 /* [CP] Embed Pods Frameworks */,
+				8B929E5127A056F37EB33DBA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B929E5127A056F37EB33DBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28C97F0861D9AFAF45EB803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6579123DF6A58A13E24E53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECC2624F200D20240025DCA1 /* Sources */ = {
@@ -351,31 +426,35 @@
 		};
 		ECC26271200D20240025DCA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85BA3B34E9DD3B195F76BD62 /* Pods-FastMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTX78TLLU2;
 				INFOPLIST_FILE = FastMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FastShop.FastMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		ECC26272200D20240025DCA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTX78TLLU2;
 				INFOPLIST_FILE = FastMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FastShop.FastMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
