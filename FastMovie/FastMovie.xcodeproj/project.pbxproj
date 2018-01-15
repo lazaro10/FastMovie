@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC15439EBB8C8414091B6D9F /* Pods_FastMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */; };
+		EC1C72AD200D328700D7120D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1C72AC200D328700D7120D /* Default-568h@2x.png */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
-		ECC26259200D20240025DCA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26258200D20240025DCA1 /* ViewController.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
 		ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625D200D20240025DCA1 /* Assets.xcassets */; };
 		ECC26261200D20240025DCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625F200D20240025DCA1 /* LaunchScreen.storyboard */; };
@@ -30,9 +30,9 @@
 		85BA3B34E9DD3B195F76BD62 /* Pods-FastMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.release.xcconfig"; sourceTree = "<group>"; };
+		EC1C72AC200D328700D7120D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ECC26253200D20240025DCA1 /* FastMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC26256200D20240025DCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECC26258200D20240025DCA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECC2625B200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECC2625D200D20240025DCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC26260200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,9 +78,50 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC1C72A7200D319800D7120D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC1C72A8200D31D100D7120D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC1C72A9200D31E000D7120D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECC26256200D20240025DCA1 /* AppDelegate.swift */,
+				ECC2625D200D20240025DCA1 /* Assets.xcassets */,
+				ECC2625F200D20240025DCA1 /* LaunchScreen.storyboard */,
+				ECC26262200D20240025DCA1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC1C72AA200D31ED00D7120D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC1C72AB200D321700D7120D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2625A200D20240025DCA1 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		ECC2624A200D20240025DCA1 = {
 			isa = PBXGroup;
 			children = (
+				EC1C72AC200D328700D7120D /* Default-568h@2x.png */,
 				ECC26255200D20240025DCA1 /* FastMovie */,
 				ECC2626A200D20240025DCA1 /* FastMovieTests */,
 				ECC26254200D20240025DCA1 /* Products */,
@@ -101,12 +142,11 @@
 		ECC26255200D20240025DCA1 /* FastMovie */ = {
 			isa = PBXGroup;
 			children = (
-				ECC26256200D20240025DCA1 /* AppDelegate.swift */,
-				ECC26258200D20240025DCA1 /* ViewController.swift */,
-				ECC2625A200D20240025DCA1 /* Main.storyboard */,
-				ECC2625D200D20240025DCA1 /* Assets.xcassets */,
-				ECC2625F200D20240025DCA1 /* LaunchScreen.storyboard */,
-				ECC26262200D20240025DCA1 /* Info.plist */,
+				EC1C72A8200D31D100D7120D /* Application */,
+				EC1C72A7200D319800D7120D /* Network */,
+				EC1C72AA200D31ED00D7120D /* Common */,
+				EC1C72AB200D321700D7120D /* Storyboard */,
+				EC1C72A9200D31E000D7120D /* Resources */,
 			);
 			path = FastMovie;
 			sourceTree = "<group>";
@@ -207,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC26261200D20240025DCA1 /* LaunchScreen.storyboard in Resources */,
+				EC1C72AD200D328700D7120D /* Default-568h@2x.png in Resources */,
 				ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */,
 				ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */,
 			);
@@ -274,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC26259200D20240025DCA1 /* ViewController.swift in Sources */,
 				ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
