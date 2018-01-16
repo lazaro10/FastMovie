@@ -1,21 +1,12 @@
 PODS:
   - Alamofire (4.5.1)
-  - RxAlamofire (4.0.0):
-    - RxAlamofire/Core (= 4.0.0)
-  - RxAlamofire/Core (4.0.0):
-    - Alamofire (~> 4.5)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5.1)
-  - RxAlamofire (~> 4.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
-  RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
 
-PODFILE CHECKSUM: fc8bbcf8dcd6bfde2ab5459ae3220f9683bf6072
+PODFILE CHECKSUM: decb4b18c7df535c154abc7fd5555f2eaccc396d
 
 COCOAPODS: 1.2.1

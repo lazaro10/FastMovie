@@ -7,6 +7,4 @@ target 'FastMovie' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.5.1'
-  pod 'RxAlamofire', '~> 4.0.0'
-
 end
