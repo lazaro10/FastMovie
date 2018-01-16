@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		DC15439EBB8C8414091B6D9F /* Pods_FastMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */; };
 		EC1C72AF200D32CB00D7120D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */; };
-		EC1C72B2200D5AF100D7120D /* NetworkSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72B1200D5AF100D7120D /* NetworkSetup.swift */; };
-		EC1C72B4200D5B0700D7120D /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72B3200D5B0700D7120D /* BaseNetwork.swift */; };
-		EC1C72B6200D5B2600D7120D /* ResponseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72B5200D5B2600D7120D /* ResponseConverter.swift */; };
-		EC1C72BB200D626E00D7120D /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72BA200D626E00D7120D /* ErrorResponseModel.swift */; };
-		EC1C72BD200D641F00D7120D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72BC200D641F00D7120D /* NetworkError.swift */; };
-		EC1C72BF200D646400D7120D /* ErrorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72BE200D646400D7120D /* ErrorConverter.swift */; };
-		EC1C72C1200D6E9100D7120D /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72C0200D6E9100D7120D /* ErrorManager.swift */; };
-		EC1C72C3200D781900D7120D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72C2200D781900D7120D /* Result.swift */; };
-		EC1C72C5200D79A600D7120D /* JSon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C72C4200D79A600D7120D /* JSon.swift */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
 		ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625D200D20240025DCA1 /* Assets.xcassets */; };
 		ECC26261200D20240025DCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625F200D20240025DCA1 /* LaunchScreen.storyboard */; };
 		ECC2626C200D20240025DCA1 /* FastMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2626B200D20240025DCA1 /* FastMovieTests.swift */; };
+		ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */; };
+		ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */; };
+		ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */; };
+		ECF7BA3D200E6C35001F88C3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3C200E6C35001F88C3 /* NetworkError.swift */; };
+		ECF7BA40200E6C84001F88C3 /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3F200E6C84001F88C3 /* String+Constants.swift */; };
+		ECF7BA44200E6F2E001F88C3 /* contViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA43200E6F2E001F88C3 /* contViewController.swift */; };
+		ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA45200E7D9B001F88C3 /* CompletionHandler.swift */; };
+		ECF7BA48200E7DAE001F88C3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA47200E7DAE001F88C3 /* Result.swift */; };
+		ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA49200E7DDD001F88C3 /* GenerateResultArrayToArray.swift */; };
+		ECF7BA4C200E7DF2001F88C3 /* GenerateResultObjectToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA4B200E7DF2001F88C3 /* GenerateResultObjectToArray.swift */; };
+		ECF7BA4E200E7E09001F88C3 /* GenerateResultObjectToObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA4D200E7E09001F88C3 /* GenerateResultObjectToObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +42,6 @@
 		8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.release.xcconfig"; sourceTree = "<group>"; };
 		EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EC1C72B1200D5AF100D7120D /* NetworkSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSetup.swift; sourceTree = "<group>"; };
-		EC1C72B3200D5B0700D7120D /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
-		EC1C72B5200D5B2600D7120D /* ResponseConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseConverter.swift; sourceTree = "<group>"; };
-		EC1C72BA200D626E00D7120D /* ErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
-		EC1C72BC200D641F00D7120D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		EC1C72BE200D646400D7120D /* ErrorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorConverter.swift; sourceTree = "<group>"; };
-		EC1C72C0200D6E9100D7120D /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
-		EC1C72C2200D781900D7120D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		EC1C72C4200D79A600D7120D /* JSon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSon.swift; sourceTree = "<group>"; };
 		ECC26253200D20240025DCA1 /* FastMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC26256200D20240025DCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC2625B200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +51,17 @@
 		ECC26267200D20240025DCA1 /* FastMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC2626B200D20240025DCA1 /* FastMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastMovieTests.swift; sourceTree = "<group>"; };
 		ECC2626D200D20240025DCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestable.swift; sourceTree = "<group>"; };
+		ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestFactory.swift; sourceTree = "<group>"; };
+		ECF7BA3C200E6C35001F88C3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		ECF7BA3F200E6C84001F88C3 /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
+		ECF7BA43200E6F2E001F88C3 /* contViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contViewController.swift; sourceTree = "<group>"; };
+		ECF7BA45200E7D9B001F88C3 /* CompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionHandler.swift; sourceTree = "<group>"; };
+		ECF7BA47200E7DAE001F88C3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		ECF7BA49200E7DDD001F88C3 /* GenerateResultArrayToArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateResultArrayToArray.swift; sourceTree = "<group>"; };
+		ECF7BA4B200E7DF2001F88C3 /* GenerateResultObjectToArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateResultObjectToArray.swift; sourceTree = "<group>"; };
+		ECF7BA4D200E7E09001F88C3 /* GenerateResultObjectToObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateResultObjectToObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 		EC1C72A7200D319800D7120D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EC1C72B0200D5AC400D7120D /* Base */,
+				ECF7BA30200E6B6F001F88C3 /* Request */,
+				ECF7BA31200E6B7D001F88C3 /* Result */,
+				ECF7BA32200E6B8E001F88C3 /* Factories */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -107,6 +113,7 @@
 		EC1C72A8200D31D100D7120D /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA43200E6F2E001F88C3 /* contViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		EC1C72AA200D31ED00D7120D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA3E200E6C6C001F88C3 /* Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -135,30 +143,6 @@
 				ECC2625A200D20240025DCA1 /* Main.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		EC1C72B0200D5AC400D7120D /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				EC1C72B7200D615900D7120D /* BaseError */,
-				EC1C72B1200D5AF100D7120D /* NetworkSetup.swift */,
-				EC1C72B3200D5B0700D7120D /* BaseNetwork.swift */,
-				EC1C72B5200D5B2600D7120D /* ResponseConverter.swift */,
-				EC1C72C2200D781900D7120D /* Result.swift */,
-				EC1C72C4200D79A600D7120D /* JSon.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		EC1C72B7200D615900D7120D /* BaseError */ = {
-			isa = PBXGroup;
-			children = (
-				EC1C72C0200D6E9100D7120D /* ErrorManager.swift */,
-				EC1C72BC200D641F00D7120D /* NetworkError.swift */,
-				EC1C72BE200D646400D7120D /* ErrorConverter.swift */,
-				EC1C72BA200D626E00D7120D /* ErrorResponseModel.swift */,
-			);
-			path = BaseError;
 			sourceTree = "<group>";
 		};
 		ECC2624A200D20240025DCA1 = {
@@ -201,6 +185,68 @@
 				ECC2626D200D20240025DCA1 /* Info.plist */,
 			);
 			path = FastMovieTests;
+			sourceTree = "<group>";
+		};
+		ECF7BA30200E6B6F001F88C3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA33200E6BA9001F88C3 /* GET */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		ECF7BA31200E6B7D001F88C3 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA45200E7D9B001F88C3 /* CompletionHandler.swift */,
+				ECF7BA47200E7DAE001F88C3 /* Result.swift */,
+				ECF7BA49200E7DDD001F88C3 /* GenerateResultArrayToArray.swift */,
+				ECF7BA4B200E7DF2001F88C3 /* GenerateResultObjectToArray.swift */,
+				ECF7BA4D200E7E09001F88C3 /* GenerateResultObjectToObject.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		ECF7BA32200E6B8E001F88C3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA38200E6C0C001F88C3 /* Error */,
+				ECF7BA39200E6C14001F88C3 /* Request */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		ECF7BA33200E6BA9001F88C3 /* GET */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */,
+				ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */,
+			);
+			path = GET;
+			sourceTree = "<group>";
+		};
+		ECF7BA38200E6C0C001F88C3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA3C200E6C35001F88C3 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		ECF7BA39200E6C14001F88C3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		ECF7BA3E200E6C6C001F88C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA3F200E6C84001F88C3 /* String+Constants.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,16 +404,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1C72C3200D781900D7120D /* Result.swift in Sources */,
-				EC1C72B4200D5B0700D7120D /* BaseNetwork.swift in Sources */,
-				EC1C72B6200D5B2600D7120D /* ResponseConverter.swift in Sources */,
-				EC1C72C1200D6E9100D7120D /* ErrorManager.swift in Sources */,
-				EC1C72B2200D5AF100D7120D /* NetworkSetup.swift in Sources */,
-				EC1C72BD200D641F00D7120D /* NetworkError.swift in Sources */,
-				EC1C72BB200D626E00D7120D /* ErrorResponseModel.swift in Sources */,
-				EC1C72BF200D646400D7120D /* ErrorConverter.swift in Sources */,
+				ECF7BA48200E7DAE001F88C3 /* Result.swift in Sources */,
+				ECF7BA4C200E7DF2001F88C3 /* GenerateResultObjectToArray.swift in Sources */,
+				ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */,
 				ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */,
-				EC1C72C5200D79A600D7120D /* JSon.swift in Sources */,
+				ECF7BA4E200E7E09001F88C3 /* GenerateResultObjectToObject.swift in Sources */,
+				ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */,
+				ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */,
+				ECF7BA44200E6F2E001F88C3 /* contViewController.swift in Sources */,
+				ECF7BA40200E6C84001F88C3 /* String+Constants.swift in Sources */,
+				ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */,
+				ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */,
+				ECF7BA3D200E6C35001F88C3 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
