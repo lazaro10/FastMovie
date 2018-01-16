@@ -19,7 +19,6 @@
 		ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */; };
 		ECF7BA3D200E6C35001F88C3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3C200E6C35001F88C3 /* NetworkError.swift */; };
 		ECF7BA40200E6C84001F88C3 /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3F200E6C84001F88C3 /* String+Constants.swift */; };
-		ECF7BA44200E6F2E001F88C3 /* contViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA43200E6F2E001F88C3 /* contViewController.swift */; };
 		ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA45200E7D9B001F88C3 /* CompletionHandler.swift */; };
 		ECF7BA48200E7DAE001F88C3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA47200E7DAE001F88C3 /* Result.swift */; };
 		ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA49200E7DDD001F88C3 /* GenerateResultArrayToArray.swift */; };
@@ -56,7 +55,6 @@
 		ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestFactory.swift; sourceTree = "<group>"; };
 		ECF7BA3C200E6C35001F88C3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		ECF7BA3F200E6C84001F88C3 /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
-		ECF7BA43200E6F2E001F88C3 /* contViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contViewController.swift; sourceTree = "<group>"; };
 		ECF7BA45200E7D9B001F88C3 /* CompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionHandler.swift; sourceTree = "<group>"; };
 		ECF7BA47200E7DAE001F88C3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		ECF7BA49200E7DDD001F88C3 /* GenerateResultArrayToArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateResultArrayToArray.swift; sourceTree = "<group>"; };
@@ -110,14 +108,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		EC1C72A8200D31D100D7120D /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				ECF7BA43200E6F2E001F88C3 /* contViewController.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		EC1C72A9200D31E000D7120D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +159,6 @@
 		ECC26255200D20240025DCA1 /* FastMovie */ = {
 			isa = PBXGroup;
 			children = (
-				EC1C72A8200D31D100D7120D /* Application */,
 				EC1C72A7200D319800D7120D /* Network */,
 				EC1C72AA200D31ED00D7120D /* Common */,
 				EC1C72AB200D321700D7120D /* Storyboard */,
@@ -411,7 +400,6 @@
 				ECF7BA4E200E7E09001F88C3 /* GenerateResultObjectToObject.swift in Sources */,
 				ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */,
 				ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */,
-				ECF7BA44200E6F2E001F88C3 /* contViewController.swift in Sources */,
 				ECF7BA40200E6C84001F88C3 /* String+Constants.swift in Sources */,
 				ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */,
 				ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */,
