@@ -42,6 +42,12 @@
 		ECF7BA94200EF368001F88C3 /* GenresInterectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA93200EF368001F88C3 /* GenresInterectorFactory.swift */; };
 		ECF7BA96200EF3EA001F88C3 /* GenresPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA95200EF3EA001F88C3 /* GenresPresenterFactory.swift */; };
 		ECF7BA9A200EFF99001F88C3 /* GenresPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA99200EFF99001F88C3 /* GenresPresentation.swift */; };
+		ECF7BAA0200F1F3C001F88C3 /* GenreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA9E200F1F3C001F88C3 /* GenreTableViewCell.swift */; };
+		ECF7BAA1200F1F3C001F88C3 /* GenreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF7BA9F200F1F3C001F88C3 /* GenreTableViewCell.xib */; };
+		ECF7BAA4200F2392001F88C3 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BAA3200F2392001F88C3 /* TableDataSource.swift */; };
+		ECF7BAA6200F23D7001F88C3 /* ViewCellHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BAA5200F23D7001F88C3 /* ViewCellHandler.swift */; };
+		ECF7BAA9200F23FF001F88C3 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BAA8200F23FF001F88C3 /* Identifiable.swift */; };
+		ECF7BAAD200F2ABB001F88C3 /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BAAC200F2ABB001F88C3 /* UIColor+RandomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +102,12 @@
 		ECF7BA93200EF368001F88C3 /* GenresInterectorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInterectorFactory.swift; sourceTree = "<group>"; };
 		ECF7BA95200EF3EA001F88C3 /* GenresPresenterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenterFactory.swift; sourceTree = "<group>"; };
 		ECF7BA99200EFF99001F88C3 /* GenresPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresentation.swift; sourceTree = "<group>"; };
+		ECF7BA9E200F1F3C001F88C3 /* GenreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreTableViewCell.swift; sourceTree = "<group>"; };
+		ECF7BA9F200F1F3C001F88C3 /* GenreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreTableViewCell.xib; sourceTree = "<group>"; };
+		ECF7BAA3200F2392001F88C3 /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		ECF7BAA5200F23D7001F88C3 /* ViewCellHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCellHandler.swift; sourceTree = "<group>"; };
+		ECF7BAA8200F23FF001F88C3 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		ECF7BAAC200F2ABB001F88C3 /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +170,8 @@
 		EC1C72AA200D31ED00D7120D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BAA7200F23F3001F88C3 /* Identifiable */,
+				ECF7BAA2200F2383001F88C3 /* DataSource */,
 				ECF7BA3E200E6C6C001F88C3 /* Extension */,
 			);
 			path = Common;
@@ -271,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				ECF7BA3F200E6C84001F88C3 /* String+Constants.swift */,
+				ECF7BAAC200F2ABB001F88C3 /* UIColor+RandomColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -422,6 +437,7 @@
 		ECF7BA86200EE3DB001F88C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA9B200F1F07001F88C3 /* Cell */,
 				ECF7BA89200EE585001F88C3 /* GenreListTableViewController.swift */,
 			);
 			path = View;
@@ -458,6 +474,32 @@
 				ECF7BA95200EF3EA001F88C3 /* GenresPresenterFactory.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ECF7BA9B200F1F07001F88C3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA9E200F1F3C001F88C3 /* GenreTableViewCell.swift */,
+				ECF7BA9F200F1F3C001F88C3 /* GenreTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ECF7BAA2200F2383001F88C3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BAA3200F2392001F88C3 /* TableDataSource.swift */,
+				ECF7BAA5200F23D7001F88C3 /* ViewCellHandler.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		ECF7BAA7200F23F3001F88C3 /* Identifiable */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BAA8200F23FF001F88C3 /* Identifiable.swift */,
+			);
+			path = Identifiable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,6 +591,7 @@
 				ECC26261200D20240025DCA1 /* LaunchScreen.storyboard in Resources */,
 				EC1C72AF200D32CB00D7120D /* Default-568h@2x.png in Resources */,
 				ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */,
+				ECF7BAA1200F1F3C001F88C3 /* GenreTableViewCell.xib in Resources */,
 				ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,14 +667,19 @@
 				ECF7BA9A200EFF99001F88C3 /* GenresPresentation.swift in Sources */,
 				ECF7BA56200E821C001F88C3 /* GenreCodable.swift in Sources */,
 				ECF7BA8A200EE585001F88C3 /* GenreListTableViewController.swift in Sources */,
+				ECF7BAA6200F23D7001F88C3 /* ViewCellHandler.swift in Sources */,
 				ECF7BA82200ECA5C001F88C3 /* MovieNeteworkGateway.swift in Sources */,
 				ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */,
+				ECF7BAAD200F2ABB001F88C3 /* UIColor+RandomColor.swift in Sources */,
 				ECF7BA8E200EEFB7001F88C3 /* GenresInterector.swift in Sources */,
+				ECF7BAA4200F2392001F88C3 /* TableDataSource.swift in Sources */,
 				ECF7BA54200E820E001F88C3 /* Genre.swift in Sources */,
 				ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */,
 				ECF7BA58200E82EA001F88C3 /* GenresGateway.swift in Sources */,
 				ECF7BA90200EEFC7001F88C3 /* GenresPresenter.swift in Sources */,
 				ECF7BA4E200E7E09001F88C3 /* GenerateResultObjectToObject.swift in Sources */,
+				ECF7BAA9200F23FF001F88C3 /* Identifiable.swift in Sources */,
+				ECF7BAA0200F1F3C001F88C3 /* GenreTableViewCell.swift in Sources */,
 				ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */,
 				ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */,
 				ECF7BA40200E6C84001F88C3 /* String+Constants.swift in Sources */,
