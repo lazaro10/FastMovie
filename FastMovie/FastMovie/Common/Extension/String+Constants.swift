@@ -13,5 +13,10 @@ extension String {
         static let offline = "No momento você está offline."
         static let other = "Um erro inesperado ocorreu durante a comunicação com o servidor."
     }
+    
+    struct API {
+        static let baseURL = "https://api.themoviedb.org/3/"
+        static let apiKey = "5537f1e43fe3693b3365549d0a5cd5e4"
+    }
 }
 
