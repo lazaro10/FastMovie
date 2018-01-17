@@ -36,6 +36,12 @@
 		ECF7BA80200ECA4A001F88C3 /* MovieGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA7F200ECA4A001F88C3 /* MovieGateway.swift */; };
 		ECF7BA82200ECA5C001F88C3 /* MovieNeteworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA81200ECA5C001F88C3 /* MovieNeteworkGateway.swift */; };
 		ECF7BA84200ED096001F88C3 /* MovieNeteworkGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFake.swift */; };
+		ECF7BA8A200EE585001F88C3 /* GenreListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA89200EE585001F88C3 /* GenreListTableViewController.swift */; };
+		ECF7BA8E200EEFB7001F88C3 /* GenresInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA8D200EEFB7001F88C3 /* GenresInterector.swift */; };
+		ECF7BA90200EEFC7001F88C3 /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA8F200EEFC7001F88C3 /* GenresPresenter.swift */; };
+		ECF7BA94200EF368001F88C3 /* GenresInterectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA93200EF368001F88C3 /* GenresInterectorFactory.swift */; };
+		ECF7BA96200EF3EA001F88C3 /* GenresPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA95200EF3EA001F88C3 /* GenresPresenterFactory.swift */; };
+		ECF7BA9A200EFF99001F88C3 /* GenresPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA99200EFF99001F88C3 /* GenresPresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,12 @@
 		ECF7BA7F200ECA4A001F88C3 /* MovieGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGateway.swift; sourceTree = "<group>"; };
 		ECF7BA81200ECA5C001F88C3 /* MovieNeteworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNeteworkGateway.swift; sourceTree = "<group>"; };
 		ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNeteworkGatewayFake.swift; sourceTree = "<group>"; };
+		ECF7BA89200EE585001F88C3 /* GenreListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListTableViewController.swift; sourceTree = "<group>"; };
+		ECF7BA8D200EEFB7001F88C3 /* GenresInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInterector.swift; sourceTree = "<group>"; };
+		ECF7BA8F200EEFC7001F88C3 /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
+		ECF7BA93200EF368001F88C3 /* GenresInterectorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInterectorFactory.swift; sourceTree = "<group>"; };
+		ECF7BA95200EF3EA001F88C3 /* GenresPresenterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenterFactory.swift; sourceTree = "<group>"; };
+		ECF7BA99200EFF99001F88C3 /* GenresPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,8 +278,8 @@
 		ECF7BA4F200E8173001F88C3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				ECF7BA63200E8C1E001F88C3 /* Movies */,
 				ECF7BA50200E81B7001F88C3 /* Genres */,
+				ECF7BA63200E8C1E001F88C3 /* Movies */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -275,6 +287,7 @@
 		ECF7BA50200E81B7001F88C3 /* Genres */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA86200EE3DB001F88C3 /* View */,
 				ECF7BA5B200E8511001F88C3 /* Core */,
 				ECF7BA5C200E851D001F88C3 /* Factories */,
 			);
@@ -304,6 +317,8 @@
 		ECF7BA5B200E8511001F88C3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA8C200EEF78001F88C3 /* Presenter */,
+				ECF7BA8B200EEF6F001F88C3 /* Interector */,
 				ECF7BA52200E81D4001F88C3 /* Gateway */,
 				ECF7BA51200E81BF001F88C3 /* Entities */,
 			);
@@ -321,6 +336,8 @@
 		ECF7BA5D200E8525001F88C3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA92200EF2AC001F88C3 /* Presenter */,
+				ECF7BA91200EF2A5001F88C3 /* Interector */,
 				ECF7BA5E200E852D001F88C3 /* Gateway */,
 			);
 			path = Core;
@@ -346,6 +363,7 @@
 		ECF7BA64200E8C30001F88C3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ECF7BA85200EE32A001F88C3 /* View */,
 				ECF7BA68200E8C52001F88C3 /* Gateway */,
 				ECF7BA67200E8C4C001F88C3 /* Entities */,
 			);
@@ -392,6 +410,54 @@
 				ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFake.swift */,
 			);
 			path = Gateway;
+			sourceTree = "<group>";
+		};
+		ECF7BA85200EE32A001F88C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECF7BA86200EE3DB001F88C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA89200EE585001F88C3 /* GenreListTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECF7BA8B200EEF6F001F88C3 /* Interector */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA8D200EEFB7001F88C3 /* GenresInterector.swift */,
+			);
+			path = Interector;
+			sourceTree = "<group>";
+		};
+		ECF7BA8C200EEF78001F88C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA8F200EEFC7001F88C3 /* GenresPresenter.swift */,
+				ECF7BA99200EFF99001F88C3 /* GenresPresentation.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ECF7BA91200EF2A5001F88C3 /* Interector */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA93200EF368001F88C3 /* GenresInterectorFactory.swift */,
+			);
+			path = Interector;
+			sourceTree = "<group>";
+		};
+		ECF7BA92200EF2AC001F88C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7BA95200EF3EA001F88C3 /* GenresPresenterFactory.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,13 +618,19 @@
 				ECF7BA5A200E8335001F88C3 /* GenresNetworkGateway.swift in Sources */,
 				ECF7BA48200E7DAE001F88C3 /* Result.swift in Sources */,
 				ECF7BA4C200E7DF2001F88C3 /* GenerateResultObjectToArray.swift in Sources */,
+				ECF7BA96200EF3EA001F88C3 /* GenresPresenterFactory.swift in Sources */,
 				ECF7BA7A200EB175001F88C3 /* MovieCodable.swift in Sources */,
+				ECF7BA94200EF368001F88C3 /* GenresInterectorFactory.swift in Sources */,
+				ECF7BA9A200EFF99001F88C3 /* GenresPresentation.swift in Sources */,
 				ECF7BA56200E821C001F88C3 /* GenreCodable.swift in Sources */,
+				ECF7BA8A200EE585001F88C3 /* GenreListTableViewController.swift in Sources */,
 				ECF7BA82200ECA5C001F88C3 /* MovieNeteworkGateway.swift in Sources */,
 				ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */,
+				ECF7BA8E200EEFB7001F88C3 /* GenresInterector.swift in Sources */,
 				ECF7BA54200E820E001F88C3 /* Genre.swift in Sources */,
 				ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */,
 				ECF7BA58200E82EA001F88C3 /* GenresGateway.swift in Sources */,
+				ECF7BA90200EEFC7001F88C3 /* GenresPresenter.swift in Sources */,
 				ECF7BA4E200E7E09001F88C3 /* GenerateResultObjectToObject.swift in Sources */,
 				ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */,
 				ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */,
