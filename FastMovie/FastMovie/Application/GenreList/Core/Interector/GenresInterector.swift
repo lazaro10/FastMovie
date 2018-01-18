@@ -18,6 +18,12 @@ struct GenresInterector {
     
     func fetchGenres(completion: @escaping CompletionHandler<[Genre], NetworkError>) {
         gateway.genres { (result) in
+            switch result {
+            case .success(let genres):
+                DataSession.genres = genres
+            default:
+                break
+            }
             completion(result)
         }
     }

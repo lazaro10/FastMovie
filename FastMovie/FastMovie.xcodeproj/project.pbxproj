@@ -71,6 +71,10 @@
 		ECFB9DE02010136100C5BD38 /* SceneTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9DDF2010136100C5BD38 /* SceneTransition.swift */; };
 		ECFB9DE22010168700C5BD38 /* UINavigationController+PushCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9DE12010168700C5BD38 /* UINavigationController+PushCompletion.swift */; };
 		ECFB9DE4201024B700C5BD38 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9DE3201024B700C5BD38 /* MovieViewController.swift */; };
+		ECFB9DE92010598300C5BD38 /* DataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9DE82010598300C5BD38 /* DataSession.swift */; };
+		ECFB9DED20107A9B00C5BD38 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9DEB20107A9B00C5BD38 /* ErrorViewController.swift */; };
+		ECFB9DEE20107A9B00C5BD38 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFB9DEC20107A9B00C5BD38 /* ErrorViewController.xib */; };
+		ECFB9DF020107DD000C5BD38 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9DEF20107DD000C5BD38 /* ErrorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +158,10 @@
 		ECFB9DDF2010136100C5BD38 /* SceneTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTransition.swift; sourceTree = "<group>"; };
 		ECFB9DE12010168700C5BD38 /* UINavigationController+PushCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+PushCompletion.swift"; sourceTree = "<group>"; };
 		ECFB9DE3201024B700C5BD38 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		ECFB9DE82010598300C5BD38 /* DataSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSession.swift; sourceTree = "<group>"; };
+		ECFB9DEB20107A9B00C5BD38 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		ECFB9DEC20107A9B00C5BD38 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
+		ECFB9DEF20107DD000C5BD38 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +224,8 @@
 		EC1C72AA200D31ED00D7120D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECFB9DEA20107A7200C5BD38 /* ErrorManager */,
+				ECFB9DE52010583000C5BD38 /* Session */,
 				ECFB9DD820100F5100C5BD38 /* Injectable */,
 				ECF7BAA7200F23F3001F88C3 /* Identifiable */,
 				ECF7BAA2200F2383001F88C3 /* DataSource */,
@@ -691,6 +701,24 @@
 			path = Injectable;
 			sourceTree = "<group>";
 		};
+		ECFB9DE52010583000C5BD38 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				ECFB9DE82010598300C5BD38 /* DataSession.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		ECFB9DEA20107A7200C5BD38 /* ErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				ECFB9DEB20107A9B00C5BD38 /* ErrorViewController.swift */,
+				ECFB9DEC20107A9B00C5BD38 /* ErrorViewController.xib */,
+				ECFB9DEF20107DD000C5BD38 /* ErrorManager.swift */,
+			);
+			path = ErrorManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -779,6 +807,7 @@
 			files = (
 				ECC26261200D20240025DCA1 /* LaunchScreen.storyboard in Resources */,
 				EC1C72AF200D32CB00D7120D /* Default-568h@2x.png in Resources */,
+				ECFB9DEE20107A9B00C5BD38 /* ErrorViewController.xib in Resources */,
 				ECFB9DA7200FCFB000C5BD38 /* GenreMovieCollectionViewCell.xib in Resources */,
 				ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */,
 				ECF7BAA1200F1F3C001F88C3 /* GenreTableViewCell.xib in Resources */,
@@ -851,6 +880,7 @@
 				ECF7BA5A200E8335001F88C3 /* GenresNetworkGateway.swift in Sources */,
 				ECFB9DC8200FEA5100C5BD38 /* GenreMoviesPresenter.swift in Sources */,
 				ECFB9DD120100AF300C5BD38 /* SceneType.swift in Sources */,
+				ECFB9DF020107DD000C5BD38 /* ErrorManager.swift in Sources */,
 				ECF7BA48200E7DAE001F88C3 /* Result.swift in Sources */,
 				ECF7BA4C200E7DF2001F88C3 /* GenerateResultObjectToArray.swift in Sources */,
 				ECFB9DCA200FEA6000C5BD38 /* GenreMoviesPresentation.swift in Sources */,
@@ -889,8 +919,10 @@
 				ECF7BA46200E7D9B001F88C3 /* CompletionHandler.swift in Sources */,
 				ECFB9DCC200FEAE400C5BD38 /* GenreMoviesInterectorFactory.swift in Sources */,
 				ECFB9DDC2010115700C5BD38 /* SceneCoordinatorType.swift in Sources */,
+				ECFB9DED20107A9B00C5BD38 /* ErrorViewController.swift in Sources */,
 				ECF7BA4A200E7DDD001F88C3 /* GenerateResultArrayToArray.swift in Sources */,
 				ECF7BA40200E6C84001F88C3 /* String+Constants.swift in Sources */,
+				ECFB9DE92010598300C5BD38 /* DataSession.swift in Sources */,
 				ECFB9DE4201024B700C5BD38 /* MovieViewController.swift in Sources */,
 				ECF7BA60200E854C001F88C3 /* GenresNetworkGatewayFactory.swift in Sources */,
 				ECF7BA7C200EB18A001F88C3 /* Movie.swift in Sources */,

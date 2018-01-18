@@ -9,8 +9,6 @@
 import UIKit
 
 class GenreTableViewCell: UITableViewCell, Identifiable {
-
-    static let height: CGFloat = 60.0
     
     @IBOutlet weak var tagImage: UIView!
     @IBOutlet weak var nameLabel: UILabel!
