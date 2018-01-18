@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.5.1)
+  - RxSwift (4.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - RxSwift (~> 4.0)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
 
-PODFILE CHECKSUM: cc6c6a8f54b614ea9ff7e118f4f371e2307d5345
+PODFILE CHECKSUM: beaf59acbe1eba55dd0eaf16d9c7f726cde7b90a
 
 COCOAPODS: 1.2.1
