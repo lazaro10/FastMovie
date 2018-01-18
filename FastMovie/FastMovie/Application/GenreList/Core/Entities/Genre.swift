@@ -6,7 +6,25 @@
 //  Copyright © 2018 Lázaro Lima dos Santos. All rights reserved.
 //
 
-struct Genre {
-    let id: Int
-    let name: String
+import Foundation
+
+class Genre: NSObject {
+    var id: Int = 0
+    var name: String = ""
+    
+    init(id: Int, name: String) {
+        self.id = id
+        self.name = name
+    }
+    
+    init(coder decoder: NSCoder)  {
+        self.name = decoder.decodeObject(forKey: "name") as! String
+        self.id = decoder.decodeInteger(forKey: "id")
+        
+    }
+    
+    func encodeWithCoder(coder: NSCoder) {
+        coder.encode(self.name, forKey: "name")
+        coder.encodeCInt(Int32(self.id), forKey: "id")
+    }
 }

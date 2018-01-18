@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class GenreListViewController: UIViewController {
 
@@ -28,7 +29,6 @@ class GenreListViewController: UIViewController {
     
     private func configureTable() {
         tableView.register(UINib(nibName: GenreTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: GenreTableViewCell.identifier)
-        tableView.rowHeight = GenreTableViewCell.height
     }
     
     private func setDataSource(genres: [Genre]) {
@@ -48,20 +48,25 @@ extension GenreListViewController: GenresPresentation {
     }
     
     func onError(error: NetworkError) {
-        
+        ErrorManager().handle(error, on: self) {
+            self.presenter.getGenres()
+        }
     }
     
     func onLoading() {
-        
+        tableView.isHidden = true
+        SVProgressHUD.show()
     }
     
     func offLoading() {
-        
+        tableView.isHidden = false
+        SVProgressHUD.dismiss()
     }
 }
 
 extension GenreListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.showGenresMovie(idGenre: 16)
+        presenter.showGenresMovie(idGenre: self.genres[indexPath.row].id)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
