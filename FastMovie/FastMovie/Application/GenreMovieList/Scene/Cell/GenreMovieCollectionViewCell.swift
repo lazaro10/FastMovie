@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GenreMovieCollectionViewCell: UICollectionViewCell, Identifiable {
     
@@ -18,14 +19,19 @@ class GenreMovieCollectionViewCell: UICollectionViewCell, Identifiable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        poster.kf.indicatorType = .activity
     }
     
-    fileprivate var genreMovie: GenreMovie? {
+    fileprivate var movie: GenreMovie? {
         didSet {
-            guard let genreMovie = genreMovie else {
+            guard let movie = movie else {
                 return
             }
-            print(genreMovie)
+            poster.kf.setImage(with: movie.posterUrl)
+            genres.text = movie.getNamesGenres()
+            title.text = movie.title
+            releaseDate.text = movie.releaseDate
+            voteAverage.text = "\(movie.voteAverage)"
         }
     }
     
@@ -36,10 +42,10 @@ extension GenreMovieCollectionViewCell: ViewCellHandler {
     typealias Item = GenreMovie
     var data: Item? {
         get {
-            return genreMovie
+            return movie
         }
         set {
-            genreMovie = newValue
+            movie = newValue
         }
     }
 }
