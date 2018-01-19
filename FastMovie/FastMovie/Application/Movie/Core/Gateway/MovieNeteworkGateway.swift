@@ -16,10 +16,8 @@ class MovieNeteworkGateway: MovieGateway {
         self.getRequest = getRequest
     }
     
-    func movie(id: Int, completionHandler: @escaping ((Result<Movie, NetworkError>) -> Void)) {
-        let fullURL = String.API.baseURL+"movie/\(id)?api_key="+String.API.apiKey
-        
-        getRequest.get(url: fullURL) { (data, error) in
+    func movie(url: String, completionHandler: @escaping ((Result<Movie, NetworkError>) -> Void)) {
+        getRequest.get(url: url) { (data, error) in
             let result = GenerateResultObjectToObject<MovieCodable, Movie>(self.converterMovie).generate(data, error)
             completionHandler(result)
         }

@@ -1,21 +1,42 @@
 PODS:
   - Alamofire (4.5.1)
   - Kingfisher (4.6.1)
+  - Nimble (7.0.3)
+  - OHHTTPStubs/Core (6.0.0)
+  - OHHTTPStubs/Default (6.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.0.0)
+  - OHHTTPStubs/Swift (6.0.0):
+    - OHHTTPStubs/Default
+  - Quick (1.2.0)
   - RxSwift (4.1.0)
   - SVProgressHUD (2.2.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Kingfisher (~> 4.0)
+  - Nimble (~> 7.0.2)
+  - OHHTTPStubs/Swift (~> 6.0.0)
+  - Quick (~> 1.2.0)
   - RxSwift (~> 4.0)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: 37ea54217c5e2f9119f8dc4b3407507d5e210adb
+PODFILE CHECKSUM: 40c88afccf179918c84069bcf70c368a25565552
 
 COCOAPODS: 1.2.1

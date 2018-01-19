@@ -7,5 +7,5 @@
 //
 
 protocol GenreMoviesGateway {
-    func movies(idGenre: Int, completionHandler: @escaping CompletionHandler<[GenreMovie], NetworkError>)
+    func movies(url: String, completionHandler: @escaping CompletionHandler<[GenreMovie], NetworkError>)
 }

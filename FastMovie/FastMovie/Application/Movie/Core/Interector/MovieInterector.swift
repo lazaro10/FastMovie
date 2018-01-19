@@ -16,7 +16,7 @@ struct MovieInterector {
     }
     
     func fetchGenres(idMovie: Int, completion: @escaping CompletionHandler<Movie, NetworkError>) {
-        gateway.movie(id: idMovie) { (result) in
+        gateway.movie(url: String.API.baseURL+"movie/\(idMovie)?api_key="+String.API.apiKey) { (result) in
             completion(result)
         }
     }

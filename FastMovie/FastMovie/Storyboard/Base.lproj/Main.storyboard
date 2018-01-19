@@ -144,9 +144,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K2-os-se4">
-                                <rect key="frame" x="26" y="306" width="39" height="22"/>
+                                <rect key="frame" x="45.5" y="306" width="0.0" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="39" id="7EQ-pN-KjH"/>
                                     <constraint firstAttribute="height" constant="22" id="JP2-2o-2tm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
@@ -218,7 +217,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bl7-5c-sG5">
                                 <rect key="frame" x="10" y="64" width="355" height="133.5"/>
                             </imageView>
-                            <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x31-DL-5lt">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x31-DL-5lt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.10586584359407425" green="0.10589186102151871" blue="0.10586420446634293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
