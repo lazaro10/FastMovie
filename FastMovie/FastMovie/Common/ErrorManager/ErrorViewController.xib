@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,14 +26,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgn-UP-W5O">
-                    <rect key="frame" x="10" y="322" width="355" height="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgn-UP-W5O">
+                    <rect key="frame" x="10" y="232.5" width="355" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="NIE-T3-feT"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                     <color key="textColor" red="0.50196078430000002" green="0.50588235290000005" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-d3-WQf">
-                    <rect key="frame" x="156" y="385" width="63" height="30"/>
+                    <rect key="frame" x="156" y="341.5" width="63" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="fMo-VD-QmO"/>
                         <constraint firstAttribute="width" constant="63" id="oiz-lM-UEb"/>
@@ -44,12 +48,27 @@
                         <action selector="tryAgainAction:" destination="-1" eventType="touchUpInside" id="cIs-f5-rgE"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-Xc-GZV">
+                    <rect key="frame" x="168" y="557" width="39" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="gpm-Tj-99v"/>
+                        <constraint firstAttribute="height" constant="30" id="wmv-NR-u1c"/>
+                    </constraints>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="keo-pp-WfA"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="zgn-UP-W5O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9GN-qn-LqF"/>
+                <constraint firstItem="zgn-UP-W5O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="9GN-qn-LqF"/>
                 <constraint firstItem="zgn-UP-W5O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I3G-2z-dfY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aoO-Xc-GZV" secondAttribute="bottom" constant="80" id="LUU-HS-62D"/>
                 <constraint firstItem="kNb-d3-WQf" firstAttribute="top" secondItem="zgn-UP-W5O" secondAttribute="bottom" constant="40" id="QMJ-sd-nUd"/>
+                <constraint firstItem="aoO-Xc-GZV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WEf-tZ-F8Z"/>
                 <constraint firstItem="zgn-UP-W5O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="q6l-35-5lX"/>
                 <constraint firstItem="kNb-d3-WQf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uqs-Ob-EJY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zgn-UP-W5O" secondAttribute="trailing" constant="10" id="yKw-RW-Q7r"/>

@@ -6,15 +6,17 @@
 //  Copyright © 2018 Lázaro Lima dos Santos. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class GenreMoviesPresenter {
     
     private weak var delegate: GenreMoviesPresentation?
     private lazy var interector: GenreMoviesInterector = GenreMoviesInterectorFactory.make()
+    private let coordinator: SceneCoordinatorType
     
-    init(delegate: GenreMoviesPresentation) {
+    init(delegate: GenreMoviesPresentation, coordinator: UIViewController) {
         self.delegate = delegate
+        self.coordinator = SceneCoordinator(currentViewController: coordinator)
     }
     
     func getMovies(with idGenres: Int) {
@@ -31,9 +33,9 @@ final class GenreMoviesPresenter {
             }
             delegate.offLoading()
         }
-        
     }
- 
+    
+    func showMovieDetail(idMovie: Int) {
+        self.coordinator.transition(.push(animated: true), to: Scene.movie(idMovie))
+    }
 }
-
-

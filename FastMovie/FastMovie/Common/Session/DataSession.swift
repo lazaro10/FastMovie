@@ -9,10 +9,7 @@
 import Foundation
 
 struct DataSession {
-    
-    // Variável temporária
-    static var genres: [Genre] = []
-    
+
     static func saveGenres(genres: [Genre]) {
         let defaults = UserDefaults.standard
         let archived = NSKeyedArchiver.archivedData(withRootObject: genres)
@@ -21,9 +18,9 @@ struct DataSession {
     
     static func getGenres() -> [Genre] {
         let defaults = UserDefaults.standard
-        guard let genres = defaults.object(forKey: String.Defaults.genresDefaults) as? [Genre] else {
+        guard let data = defaults.object(forKey: String.Defaults.genresDefaults) else {
             return []
         }
-        return genres
+        return NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! [Genre]
     }
 }

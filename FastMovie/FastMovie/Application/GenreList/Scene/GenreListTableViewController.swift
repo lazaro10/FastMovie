@@ -23,7 +23,6 @@ class GenreListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTable()
-        self.tableView.delegate = self
         presenter.getGenres()
     }
     
@@ -35,6 +34,7 @@ class GenreListViewController: UIViewController {
         DispatchQueue.main.async {
             self.dataSource = TableDataSource(items: genres)
             self.tableView.dataSource = self.dataSource
+            self.tableView.delegate = self
             self.tableView.reloadData()
         }
     }

@@ -27,7 +27,7 @@ class GenreMovieCollectionViewCell: UICollectionViewCell, Identifiable {
             guard let movie = movie else {
                 return
             }
-            poster.kf.setImage(with: movie.posterUrl)
+            poster.kf.setImage(with: movie.posterUrl, placeholder: #imageLiteral(resourceName: "placar_placeholder"))
             genres.text = movie.getNamesGenres()
             title.text = movie.title
             releaseDate.text = movie.releaseDate
