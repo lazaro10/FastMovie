@@ -11,10 +11,11 @@ import UIKit
 final class GenresPresenter {
     
     private weak var delegate: GenresPresentation?
-    private lazy var interector: GenresInterector = GenresInterectorFactory.make()
+    private let interector: GenresInterector
     private let coordinator: SceneCoordinatorType
     
-    init(delegate: GenresPresentation, coordinator: UIViewController) {
+    init(interector: GenresInterector, delegate: GenresPresentation, coordinator: UIViewController) {
+        self.interector = interector
         self.delegate = delegate
         self.coordinator = SceneCoordinator(currentViewController: coordinator)
     }
