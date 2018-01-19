@@ -1,5 +1,5 @@
 //
-//  MovieNeteworkGatewayFake.swift
+//  MovieNeteworkGatewayFactory.swift
 //  FastMovie
 //
 //  Created by Lázaro Lima dos Santos on 16/01/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MovieNeteworkGatewayFake {
+struct MovieNeteworkGatewayFactory {
     static func make() -> MovieGateway {
         return MovieNeteworkGateway(getRequest: GetRequestFactory.make())
     }

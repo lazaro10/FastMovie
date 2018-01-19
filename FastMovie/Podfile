@@ -2,11 +2,24 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
+def testing_pods
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+    pod 'OHHTTPStubs/Swift', '~> 6.0.0'
+end
+
 target 'FastMovie' do
     pod 'Alamofire', '~> 4.5'
     pod 'RxSwift',    '~> 4.0'
     pod 'Kingfisher', '~> 4.0'
     pod 'SVProgressHUD'
+    
+    target 'FastMovieTests' do
+        inherit! :search_paths
+        # Pods for testing
+        testing_pods
+    end
+    
 end
 
 

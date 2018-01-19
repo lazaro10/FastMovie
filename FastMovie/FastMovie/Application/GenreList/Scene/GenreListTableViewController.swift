@@ -13,7 +13,7 @@ class GenreListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     private var dataSource: TableDataSource<GenreTableViewCell, Genre>!
-    fileprivate lazy var presenter: GenresPresenter = GenresPresenterFactory.make(delegate: self, coordinator: self.navigationController!)
+    fileprivate lazy var presenter: GenresPresenter = GenresPresenterFactory.make(interector: GenresInterectorFactory.make(), delegate: self, coordinator: self.navigationController!)
     private var genres: [Genre] = [] {
         didSet {
             self.setDataSource(genres: genres)
@@ -54,8 +54,8 @@ extension GenreListViewController: GenresPresentation {
     }
     
     func onLoading() {
-        tableView.isHidden = true
         SVProgressHUD.show()
+        tableView.isHidden = true
     }
     
     func offLoading() {

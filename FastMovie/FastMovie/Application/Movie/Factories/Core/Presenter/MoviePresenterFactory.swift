@@ -9,7 +9,7 @@
 import Foundation
 
 struct MoviePresenterFactory {
-    static func make(delegate: MoviePresentation) -> MoviePresenter {
-        return MoviePresenter(delegate: delegate)
+    static func make(interector: MovieInterector, delegate: MoviePresentation) -> MoviePresenter {
+        return MoviePresenter(interector: interector, delegate: delegate)
     }
 }

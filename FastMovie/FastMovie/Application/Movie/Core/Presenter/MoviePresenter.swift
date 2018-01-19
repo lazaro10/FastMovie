@@ -11,18 +11,19 @@ import Foundation
 final class MoviePresenter {
     
     private weak var delegate: MoviePresentation?
-    private lazy var interector: MovieInterector = MovieInterectorFactory.make()
+    private var interector: MovieInterector
     
-    init(delegate: MoviePresentation) {
+    init(interector: MovieInterector, delegate: MoviePresentation) {
+        self.interector = interector
         self.delegate = delegate
     }
     
     func getMovie(idMovie: Int) {
+        delegate?.onLoading()
         interector.fetchGenres(idMovie: idMovie) { [weak self] (result) in
             guard let delegate = self?.delegate else {
-                fatalError("Delegate not instance")
+                return
             }
-            delegate.onLoading()
             switch result {
             case . success(let movie):
                 delegate.onMovie(movie: movie)

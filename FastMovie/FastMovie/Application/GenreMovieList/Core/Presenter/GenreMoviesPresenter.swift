@@ -11,20 +11,21 @@ import UIKit
 final class GenreMoviesPresenter {
     
     private weak var delegate: GenreMoviesPresentation?
-    private lazy var interector: GenreMoviesInterector = GenreMoviesInterectorFactory.make()
+    private var interector: GenreMoviesInterector
     private let coordinator: SceneCoordinatorType
     
-    init(delegate: GenreMoviesPresentation, coordinator: UIViewController) {
+    init(interector: GenreMoviesInterector, delegate: GenreMoviesPresentation, coordinator: UIViewController) {
+        self.interector = interector
         self.delegate = delegate
         self.coordinator = SceneCoordinator(currentViewController: coordinator)
     }
     
     func getMovies(with idGenres: Int) {
+        delegate?.onLoading()
         interector.fetchMovies(idGenre: idGenres) { [weak self] result in
             guard let delegate = self?.delegate else {
-                fatalError("Delegate not instance")
+                return
             }
-            delegate.onLoading()
             switch result {
             case .success(let movies):
                 delegate.onMovies(movies: movies)
