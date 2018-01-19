@@ -11,9 +11,10 @@ import Foundation
 final class MoviePresenter {
     
     private weak var delegate: MoviePresentation?
-    private lazy var interector: MovieInterector = MovieInterectorFactory.make()
+    private var interector: MovieInterector
     
-    init(delegate: MoviePresentation) {
+    init(interector: MovieInterector, delegate: MoviePresentation) {
+        self.interector = interector
         self.delegate = delegate
     }
     

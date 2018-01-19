@@ -22,8 +22,8 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var productionCountriesLabel: UILabel!
     @IBOutlet weak var emptyStateView: UIView!
     fileprivate var movieId: Int!
+    fileprivate lazy var presenter: MoviePresenter = MoviePresenterFactory.make(interector: MovieInterectorFactory.make(), delegate: self)
     
-    fileprivate lazy var presenter: MoviePresenter = MoviePresenterFactory.make(delegate: self)
     private var movie: Movie? {
         didSet {
             guard let movie = movie else {

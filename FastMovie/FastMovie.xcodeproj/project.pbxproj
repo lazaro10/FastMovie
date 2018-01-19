@@ -32,6 +32,7 @@
 		ECC4F8CA20127E4200DF350D /* GenreMoviesPresentationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8C920127E4200DF350D /* GenreMoviesPresentationMock.swift */; };
 		ECC4F8CC20127F9000DF350D /* GenreMoviesPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8CB20127F9000DF350D /* GenreMoviesPresenterSpec.swift */; };
 		ECC4F8D02012819500DF350D /* MoviePresentationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8CF2012819500DF350D /* MoviePresentationMock.swift */; };
+		ECC4F8D2201282F700DF350D /* MoviePresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8D1201282F700DF350D /* MoviePresenterSpec.swift */; };
 		ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */; };
 		ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */; };
 		ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */; };
@@ -144,6 +145,7 @@
 		ECC4F8C920127E4200DF350D /* GenreMoviesPresentationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMoviesPresentationMock.swift; sourceTree = "<group>"; };
 		ECC4F8CB20127F9000DF350D /* GenreMoviesPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMoviesPresenterSpec.swift; sourceTree = "<group>"; };
 		ECC4F8CF2012819500DF350D /* MoviePresentationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresentationMock.swift; sourceTree = "<group>"; };
+		ECC4F8D1201282F700DF350D /* MoviePresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenterSpec.swift; sourceTree = "<group>"; };
 		ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestable.swift; sourceTree = "<group>"; };
 		ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
 		ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestFactory.swift; sourceTree = "<group>"; };
@@ -550,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC4F8CE2012817C00DF350D /* Mock */,
+				ECC4F8D1201282F700DF350D /* MoviePresenterSpec.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1329,6 +1332,7 @@
 				ECC4F8C62012707800DF350D /* GenresPresentationMock.swift in Sources */,
 				ECC4F8C020126C5100DF350D /* MovieGatewayMock.swift in Sources */,
 				ECC4F8C320126F3C00DF350D /* GenresPresenterSpec.swift in Sources */,
+				ECC4F8D2201282F700DF350D /* MoviePresenterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

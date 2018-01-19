@@ -27,7 +27,7 @@ class GenreMoviesPresenterSpec: QuickSpec {
                 presenter = GenreMoviesPresenter(interector: GenreMoviesInterector(gateway: gatewayMock), delegate: presentationMock, coordinator: UIViewController())
             }
             
-            context("When the genres are called") {
+            context("When the genre movies are called") {
                 it("Success") {
                     gatewayMock.completionHandlerResult = Result.success([GenreMovie(genreIds: [1,2], id: 1, releaseDate: "2017-06-05", posterUrl: URL.init(string: "www.fastshop.com.br")!, title: "Title", voteAverage: 5.0)])
                     presenter.getMovies(with: 0)
