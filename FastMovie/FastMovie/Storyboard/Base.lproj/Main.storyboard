@@ -218,7 +218,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bl7-5c-sG5">
                                 <rect key="frame" x="10" y="64" width="355" height="133.5"/>
                             </imageView>
-                            <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x31-DL-5lt">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x31-DL-5lt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.10586584359407425" green="0.10589186102151871" blue="0.10586420446634293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>

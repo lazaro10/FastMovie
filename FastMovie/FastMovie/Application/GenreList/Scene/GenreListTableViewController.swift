@@ -54,8 +54,8 @@ extension GenreListViewController: GenresPresentation {
     }
     
     func onLoading() {
-        tableView.isHidden = true
         SVProgressHUD.show()
+        tableView.isHidden = true
     }
     
     func offLoading() {

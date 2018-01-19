@@ -20,11 +20,11 @@ final class GenresPresenter {
     }
     
     func getGenres() {
+        delegate?.onLoading()
         interector.fetchGenres { [weak self] result in
             guard let delegate = self?.delegate else {
-                fatalError("Delegate not instance")
+                return
             }
-            delegate.onLoading()
             switch result {
             case .success(let genres):
                 delegate.onGenres(genres: genres)

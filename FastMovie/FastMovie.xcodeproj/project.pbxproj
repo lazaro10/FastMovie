@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC15439EBB8C8414091B6D9F /* Pods_FastMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */; };
+		E362C5A42C4E35241F7A9BF3 /* Pods_FastMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A65C3DB0A00D65A4F3475E7 /* Pods_FastMovieTests.framework */; };
 		EC1C72AF200D32CB00D7120D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
@@ -93,7 +94,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EC742A8E003A8934556CA0 /* Pods-FastMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovieTests/Pods-FastMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A65C3DB0A00D65A4F3475E7 /* Pods_FastMovieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastMovieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BA3B34E9DD3B195F76BD62 /* Pods-FastMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		8C320AD01CFF7EF4FBA6B330 /* Pods-FastMovieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovieTests/Pods-FastMovieTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.release.xcconfig"; sourceTree = "<group>"; };
 		EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E362C5A42C4E35241F7A9BF3 /* Pods_FastMovieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */,
+				5A65C3DB0A00D65A4F3475E7 /* Pods_FastMovieTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,6 +212,8 @@
 			children = (
 				85BA3B34E9DD3B195F76BD62 /* Pods-FastMovie.debug.xcconfig */,
 				CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */,
+				04EC742A8E003A8934556CA0 /* Pods-FastMovieTests.debug.xcconfig */,
+				8C320AD01CFF7EF4FBA6B330 /* Pods-FastMovieTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -793,9 +801,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC26273200D20240025DCA1 /* Build configuration list for PBXNativeTarget "FastMovieTests" */;
 			buildPhases = (
+				51046BBE80BE9712E98BB39C /* [CP] Check Pods Manifest.lock */,
 				ECC26263200D20240025DCA1 /* Sources */,
 				ECC26264200D20240025DCA1 /* Frameworks */,
 				ECC26265200D20240025DCA1 /* Resources */,
+				D493C7FCE684A223AE757220 /* [CP] Embed Pods Frameworks */,
+				D51DFF43206D7E6A3D9D2A28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -872,6 +883,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51046BBE80BE9712E98BB39C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8B929E5127A056F37EB33DBA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -900,6 +926,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D493C7FCE684A223AE757220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastMovieTests/Pods-FastMovieTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51DFF43206D7E6A3D9D2A28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastMovieTests/Pods-FastMovieTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC6579123DF6A58A13E24E53 /* [CP] Check Pods Manifest.lock */ = {
@@ -1172,6 +1228,7 @@
 		};
 		ECC26274200D20240025DCA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EC742A8E003A8934556CA0 /* Pods-FastMovieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1188,6 +1245,7 @@
 		};
 		ECC26275200D20240025DCA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C320AD01CFF7EF4FBA6B330 /* Pods-FastMovieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
