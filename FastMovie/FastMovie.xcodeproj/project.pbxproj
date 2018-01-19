@@ -15,6 +15,8 @@
 		EC5FD3E02011C346009643D2 /* Empty.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DF2011C346009643D2 /* Empty.json */; };
 		EC5FD3E72011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5FD3E62011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift */; };
 		EC5FD3E92011CB57009643D2 /* GenreMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3E82011CB57009643D2 /* GenreMovies.json */; };
+		EC5FD3EE2011CDFC009643D2 /* MovieNeteworkGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5FD3ED2011CDFB009643D2 /* MovieNeteworkGatewaySpec.swift */; };
+		EC5FD3F02011CFB3009643D2 /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3EF2011CFB3009643D2 /* Movie.json */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
 		ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625D200D20240025DCA1 /* Assets.xcassets */; };
@@ -40,7 +42,7 @@
 		ECF7BA7C200EB18A001F88C3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA7B200EB18A001F88C3 /* Movie.swift */; };
 		ECF7BA80200ECA4A001F88C3 /* MovieGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA7F200ECA4A001F88C3 /* MovieGateway.swift */; };
 		ECF7BA82200ECA5C001F88C3 /* MovieNeteworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA81200ECA5C001F88C3 /* MovieNeteworkGateway.swift */; };
-		ECF7BA84200ED096001F88C3 /* MovieNeteworkGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFake.swift */; };
+		ECF7BA84200ED096001F88C3 /* MovieNeteworkGatewayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFactory.swift */; };
 		ECF7BA8A200EE585001F88C3 /* GenreListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA89200EE585001F88C3 /* GenreListTableViewController.swift */; };
 		ECF7BA8E200EEFB7001F88C3 /* GenresInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA8D200EEFB7001F88C3 /* GenresInterector.swift */; };
 		ECF7BA90200EEFC7001F88C3 /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA8F200EEFC7001F88C3 /* GenresPresenter.swift */; };
@@ -110,6 +112,8 @@
 		EC5FD3DF2011C346009643D2 /* Empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Empty.json; sourceTree = "<group>"; };
 		EC5FD3E62011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMoviesNetworkGatewaySpec.swift; sourceTree = "<group>"; };
 		EC5FD3E82011CB57009643D2 /* GenreMovies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GenreMovies.json; sourceTree = "<group>"; };
+		EC5FD3ED2011CDFB009643D2 /* MovieNeteworkGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNeteworkGatewaySpec.swift; sourceTree = "<group>"; };
+		EC5FD3EF2011CFB3009643D2 /* Movie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
 		ECC26253200D20240025DCA1 /* FastMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC26256200D20240025DCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC2625B200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,7 +143,7 @@
 		ECF7BA7B200EB18A001F88C3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		ECF7BA7F200ECA4A001F88C3 /* MovieGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGateway.swift; sourceTree = "<group>"; };
 		ECF7BA81200ECA5C001F88C3 /* MovieNeteworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNeteworkGateway.swift; sourceTree = "<group>"; };
-		ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNeteworkGatewayFake.swift; sourceTree = "<group>"; };
+		ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNeteworkGatewayFactory.swift; sourceTree = "<group>"; };
 		ECF7BA89200EE585001F88C3 /* GenreListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListTableViewController.swift; sourceTree = "<group>"; };
 		ECF7BA8D200EEFB7001F88C3 /* GenresInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInterector.swift; sourceTree = "<group>"; };
 		ECF7BA8F200EEFC7001F88C3 /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 				EC5FD3DB2011B24C009643D2 /* Genres.json */,
 				EC5FD3DF2011C346009643D2 /* Empty.json */,
 				EC5FD3E82011CB57009643D2 /* GenreMovies.json */,
+				EC5FD3EF2011CFB3009643D2 /* Movie.json */,
 			);
 			path = JsonAux;
 			sourceTree = "<group>";
@@ -332,6 +337,8 @@
 		EC5FD3E22011C58D009643D2 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				EC5FD3EB2011CC31009643D2 /* Scene */,
+				EC5FD3EA2011CC27009643D2 /* Core */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -355,6 +362,29 @@
 			isa = PBXGroup;
 			children = (
 				EC5FD3E62011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		EC5FD3EA2011CC27009643D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3EC2011CC75009643D2 /* Gateway */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC5FD3EB2011CC31009643D2 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EC5FD3EC2011CC75009643D2 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3ED2011CDFB009643D2 /* MovieNeteworkGatewaySpec.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -603,7 +633,7 @@
 		ECF7BA69200E8C76001F88C3 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
-				ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFake.swift */,
+				ECF7BA83200ED096001F88C3 /* MovieNeteworkGatewayFactory.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -980,6 +1010,7 @@
 			files = (
 				EC5FD3E92011CB57009643D2 /* GenreMovies.json in Resources */,
 				EC5FD3DC2011B24C009643D2 /* Genres.json in Resources */,
+				EC5FD3F02011CFB3009643D2 /* Movie.json in Resources */,
 				EC5FD3E02011C346009643D2 /* Empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1137,7 +1168,7 @@
 				ECF7BA60200E854C001F88C3 /* GenresNetworkGatewayFactory.swift in Sources */,
 				ECF7BA7C200EB18A001F88C3 /* Movie.swift in Sources */,
 				ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */,
-				ECF7BA84200ED096001F88C3 /* MovieNeteworkGatewayFake.swift in Sources */,
+				ECF7BA84200ED096001F88C3 /* MovieNeteworkGatewayFactory.swift in Sources */,
 				ECF7BA78200EB127001F88C3 /* GenreMovie.swift in Sources */,
 				ECFB9DF620113EF600C5BD38 /* MoviePresentation.swift in Sources */,
 				ECF7BA80200ECA4A001F88C3 /* MovieGateway.swift in Sources */,
@@ -1157,6 +1188,7 @@
 			files = (
 				EC5FD3D92011AD39009643D2 /* GenresNetworkGatewaySpec.swift in Sources */,
 				EC5FD3E72011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift in Sources */,
+				EC5FD3EE2011CDFC009643D2 /* MovieNeteworkGatewaySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

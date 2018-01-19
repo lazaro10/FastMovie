@@ -10,6 +10,6 @@ import Foundation
 
 struct MovieInterectorFactory {
     static func make() -> MovieInterector {
-        return MovieInterector(gateway: MovieNeteworkGatewayFake.make())
+        return MovieInterector(gateway: MovieNeteworkGatewayFactory.make())
     }
 }

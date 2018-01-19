@@ -19,7 +19,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
             let host = "fastshop.com.br"
             let fakeApiPath = "https://\(host)/"
             beforeEach {
-                gateway = GenresNetworkGateway(url: fakeApiPath, getRequest: GetRequestFactory.make())
+                gateway = GenresNetworkGatewayFactory.make()
             }
             context("Get Genres") {
                 let bundle = Bundle(for: GenresNetworkGatewaySpec.self)
@@ -31,7 +31,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
                     })
                     
                     var genres: [Genre]?
-                    gateway.genres(completionHandler: { (result) in
+                    gateway.genres(url: fakeApiPath, completionHandler: { (result) in
                         switch result {
                         case .success(let genresResult):
                             genres = genresResult
@@ -53,7 +53,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
                     })
                     
                     var error: NetworkError?
-                    gateway.genres(completionHandler: { (result) in
+                    gateway.genres(url: fakeApiPath, completionHandler: { (result) in
                         switch result {
                         case .fail(let errorResult):
                             error = errorResult
@@ -72,7 +72,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
                     })
                     
                     var error: NetworkError?
-                    gateway.genres(completionHandler: { (result) in
+                    gateway.genres(url: fakeApiPath, completionHandler: { (result) in
                         switch result {
                         case .fail(let errorResult):
                             error = errorResult

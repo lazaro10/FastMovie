@@ -17,14 +17,14 @@ struct GenresInterector {
     }
     
     func fetchGenres(completion: @escaping CompletionHandler<[Genre], NetworkError>) {
-        gateway.genres { (result) in
+        gateway.genres(url: String.API.baseURL+"genre/movie/list?api_key="+String.API.apiKey, completionHandler: { (result) in
             switch result {
             case .success(let genres):
                 DataSession.saveGenres(genres: genres)            default:
                 break
             }
             completion(result)
-        }
+        })
     }
     
 }

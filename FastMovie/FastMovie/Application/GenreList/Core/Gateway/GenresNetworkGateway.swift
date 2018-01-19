@@ -11,14 +11,12 @@ import Foundation
 struct GenresNetworkGateway: GenresGateway {
 
     private let getRequest: GetRequestable
-    private let fullURL: String
-    init(url: String, getRequest: GetRequestable) {
+    init(getRequest: GetRequestable) {
         self.getRequest = getRequest
-        self.fullURL = url
     }
     
-    func genres(completionHandler: @escaping ((Result<[Genre], NetworkError>) -> Void)) {
-        getRequest.get(url: fullURL) { (data, error) in
+    func genres(url: String, completionHandler: @escaping ((Result<[Genre], NetworkError>) -> Void)) {
+        getRequest.get(url: url) { (data, error) in
             let result = GenerateResultObjectToArray<GenreCodable, Genre>(self.converterGenres).generate(data, error)
             completionHandler(result)
         }
