@@ -15,10 +15,8 @@ struct GenreMoviesNetworkGateway: GenreMoviesGateway {
         self.getRequest = getRequest
     }
     
-    func movies(idGenre: Int, completionHandler: @escaping ((Result<[GenreMovie], NetworkError>) -> Void)) {
-        let fullURL = String.API.baseURL+"genre/\(idGenre)/movies?api_key="+String.API.apiKey
-        
-        getRequest.get(url: fullURL) { (data, error) in
+    func movies(url: String, completionHandler: @escaping ((Result<[GenreMovie], NetworkError>) -> Void)) {
+        getRequest.get(url: url) { (data, error) in
             let result = GenerateResultObjectToArray<GenreMovieCodable, GenreMovie>(self.converterMovies).generate(data, error)
             completionHandler(result)
         }

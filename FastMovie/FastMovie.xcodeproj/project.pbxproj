@@ -12,8 +12,9 @@
 		EC1C72AF200D32CB00D7120D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */; };
 		EC5FD3D92011AD39009643D2 /* GenresNetworkGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5FD3D82011AD39009643D2 /* GenresNetworkGatewaySpec.swift */; };
 		EC5FD3DC2011B24C009643D2 /* Genres.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DB2011B24C009643D2 /* Genres.json */; };
-		EC5FD3DE2011B80A009643D2 /* Error.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DD2011B80A009643D2 /* Error.json */; };
 		EC5FD3E02011C346009643D2 /* Empty.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DF2011C346009643D2 /* Empty.json */; };
+		EC5FD3E72011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5FD3E62011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift */; };
+		EC5FD3E92011CB57009643D2 /* GenreMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3E82011CB57009643D2 /* GenreMovies.json */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
 		ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625D200D20240025DCA1 /* Assets.xcassets */; };
@@ -106,8 +107,9 @@
 		EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC5FD3D82011AD39009643D2 /* GenresNetworkGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresNetworkGatewaySpec.swift; sourceTree = "<group>"; };
 		EC5FD3DB2011B24C009643D2 /* Genres.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Genres.json; sourceTree = "<group>"; };
-		EC5FD3DD2011B80A009643D2 /* Error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Error.json; sourceTree = "<group>"; };
 		EC5FD3DF2011C346009643D2 /* Empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Empty.json; sourceTree = "<group>"; };
+		EC5FD3E62011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMoviesNetworkGatewaySpec.swift; sourceTree = "<group>"; };
+		EC5FD3E82011CB57009643D2 /* GenreMovies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GenreMovies.json; sourceTree = "<group>"; };
 		ECC26253200D20240025DCA1 /* FastMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC26256200D20240025DCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC2625B200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -312,8 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				EC5FD3DB2011B24C009643D2 /* Genres.json */,
-				EC5FD3DD2011B80A009643D2 /* Error.json */,
 				EC5FD3DF2011C346009643D2 /* Empty.json */,
+				EC5FD3E82011CB57009643D2 /* GenreMovies.json */,
 			);
 			path = JsonAux;
 			sourceTree = "<group>";
@@ -352,6 +354,7 @@
 		EC5FD3E52011C5AB009643D2 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
+				EC5FD3E62011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -975,7 +978,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5FD3DE2011B80A009643D2 /* Error.json in Resources */,
+				EC5FD3E92011CB57009643D2 /* GenreMovies.json in Resources */,
 				EC5FD3DC2011B24C009643D2 /* Genres.json in Resources */,
 				EC5FD3E02011C346009643D2 /* Empty.json in Resources */,
 			);
@@ -1153,6 +1156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5FD3D92011AD39009643D2 /* GenresNetworkGatewaySpec.swift in Sources */,
+				EC5FD3E72011C626009643D2 /* GenreMoviesNetworkGatewaySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

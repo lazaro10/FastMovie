@@ -1,5 +1,5 @@
 //
-//  GenresNetworkGatewaySpec.swift
+//  GenreMoviesNetworkGatewaySpec.swift
 //  FastMovieTests
 //
 //  Created by Lázaro Lima dos Santos on 19/01/18.
@@ -12,39 +12,43 @@ import Nimble
 import OHHTTPStubs
 
 @testable import FastMovie
-class GenresNetworkGatewaySpec: QuickSpec {
+
+class GenreMoviesNetworkGatewaySpec: QuickSpec {
     override func spec() {
-        describe("GenresNetworkGatewaySpec") {
-            var gateway: GenresGateway!
+        describe("GenreMoviesNetworkGatewaySpec") {
+            var gateway: GenreMoviesGateway!
             let host = "fastshop.com.br"
             let fakeApiPath = "https://\(host)/"
+            
             beforeEach {
-                gateway = GenresNetworkGateway(url: fakeApiPath, getRequest: GetRequestFactory.make())
+                gateway = GenreMoviesNetworkGatewayFactory.make()
             }
+            
             context("Get Genres") {
-                let bundle = Bundle(for: GenresNetworkGatewaySpec.self)
-                it("Should return a list of genres when the server response is a json object"){
+                let bundle = Bundle(for: GenreMoviesNetworkGatewaySpec.self)
+                it("Should return a list of movies when the server response is a json object"){
                     
                     stub(condition: isHost(host), response: { (request) -> OHHTTPStubsResponse in
-                        let fixturePath = bundle.path(forResource: "Genres", ofType: "json")!
+                        let fixturePath = bundle.path(forResource: "GenreMovies", ofType: "json")!
                         return fixture(filePath: fixturePath, status: 200, headers: nil)
                     })
                     
-                    var genres: [Genre]?
-                    gateway.genres(completionHandler: { (result) in
+                    var genreMovies: [GenreMovie]?
+                    
+                    gateway.movies(url: fakeApiPath, completionHandler: { (result) in
                         switch result {
-                        case .success(let genresResult):
-                            genres = genresResult
+                        case .success(let genreMoviesResult):
+                            genreMovies = genreMoviesResult
                         default:
                             break
                         }
-                        
                     })
-                    expect(genres?.count).toEventually(equal(8))
-                    expect(genres?.first?.name).toEventually(equal("Action"))
-                    expect(genres?.first?.id).toEventually(equal(28))
-                }
-                
+                    
+                    expect(genreMovies?.count).toEventually(equal(3))
+                    expect(genreMovies?.first?.id).toEventually(equal(460793))
+                    expect(genreMovies?.first?.title).toEventually(equal("Olaf's Frozen Adventure"))
+            }
+            
                 it("Should return an error when server response returns empty") {
                     
                     stub(condition: isHost(host), response: { (request) -> OHHTTPStubsResponse in
@@ -53,7 +57,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
                     })
                     
                     var error: NetworkError?
-                    gateway.genres(completionHandler: { (result) in
+                    gateway.movies(url: fakeApiPath, completionHandler: { (result) in
                         switch result {
                         case .fail(let errorResult):
                             error = errorResult
@@ -61,6 +65,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
                             break
                         }
                     })
+                    
                     expect(error).toEventuallyNot(beNil())
                     expect(error).toEventually(matchError(NetworkError.mapping))
                 }
@@ -72,7 +77,7 @@ class GenresNetworkGatewaySpec: QuickSpec {
                     })
                     
                     var error: NetworkError?
-                    gateway.genres(completionHandler: { (result) in
+                    gateway.movies(url: fakeApiPath, completionHandler: { (result) in
                         switch result {
                         case .fail(let errorResult):
                             error = errorResult
@@ -83,6 +88,9 @@ class GenresNetworkGatewaySpec: QuickSpec {
                     expect(error).toEventuallyNot(beNil())
                 }
             }
+            
+            
         }
+        
     }
 }
