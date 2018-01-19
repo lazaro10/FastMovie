@@ -38,11 +38,7 @@ class MovieNeteworkGateway: MovieGateway {
         let countries = entity.countries.map {
             return Movie.Countrie(iso: $0.iso, name: $0.name)
         }
-
-        let spokenLanguages = entity.spokenLanguages.map {
-            return Movie.SpokenLanguage(name: $0.name, iso: $0.iso)
-        }
-
-        return Movie(adult: entity.adult, backdropPath: entity.backdropPath, budget: entity.budget, genres: genres, homepage: entity.homepage, id: entity.id, imbdId: entity.imbdId, originalLanguege: entity.originalLanguege, originalTitle: entity.originalTitle, overview: entity.overview, posterPath: entity.posterPath, popularity: entity.popularity, companies: companies, countries: countries, releaseDate: entity.releaseDate, revenue: entity.revenue, runtime: entity.runtime, spokenLanguages: spokenLanguages, status: entity.status, tagline: entity.tagline, title: entity.title, video: entity.video, voteAverage: entity.voteAverage, voteCount: entity.voteCount)
+        
+        return Movie(backdropURL: URL(string: String.API.imageBaseURL+(entity.backdropPath ?? ""))!, genres: genres, overview: entity.overview, posterURL: URL(string: String.API.imageBaseURL+(entity.posterPath ?? ""))!, companies: companies, countries: countries, releaseDate: entity.releaseDate, title: entity.title, voteAverage: entity.voteAverage)
     }
 }

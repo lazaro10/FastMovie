@@ -14,7 +14,7 @@ class GenreMovieListViewController: UIViewController {
     fileprivate var genreId: Int!
     
     private var dataSource: CollectionDataSource<GenreMovieCollectionViewCell, GenreMovie>!
-    fileprivate lazy var presenter: GenreMoviesPresenter = GenreMoviesPresenterFactory.make(delegate: self)
+    fileprivate lazy var presenter: GenreMoviesPresenter = GenreMoviesPresenterFactory.make(delegate: self, coordinator: self.navigationController!)
     private var movies: [GenreMovie] = [] {
         didSet {
             setDataSource(movies: movies)
@@ -35,6 +35,7 @@ class GenreMovieListViewController: UIViewController {
         DispatchQueue.main.async {
             self.dataSource = CollectionDataSource(items: movies)
             self.collectionView.dataSource = self.dataSource
+            self.collectionView.delegate = self
             self.collectionView.reloadData()
         }
     }
@@ -52,7 +53,7 @@ extension GenreMovieListViewController: GenreMoviesPresentation {
     }
     
     func onLoading() {
-         collectionView.isHidden = true
+        collectionView.isHidden = true
         SVProgressHUD.show()
     }
     
@@ -60,6 +61,15 @@ extension GenreMovieListViewController: GenreMoviesPresentation {
         collectionView.isHidden = false
         SVProgressHUD.dismiss()
     }
+}
+
+extension GenreMovieListViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.showMovieDetail(idMovie: self.movies[indexPath.row].id)
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
+    
 }
 
 extension GenreMovieListViewController: Injectable {

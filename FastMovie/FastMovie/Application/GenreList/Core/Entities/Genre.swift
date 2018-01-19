@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Genre: NSObject {
+class Genre:NSObject, NSCoding {
     var id: Int = 0
     var name: String = ""
     
@@ -17,14 +17,14 @@ class Genre: NSObject {
         self.name = name
     }
     
-    init(coder decoder: NSCoder)  {
+    required init(coder decoder: NSCoder)  {
         self.name = decoder.decodeObject(forKey: "name") as! String
         self.id = decoder.decodeInteger(forKey: "id")
-        
     }
     
-    func encodeWithCoder(coder: NSCoder) {
-        coder.encode(self.name, forKey: "name")
-        coder.encodeCInt(Int32(self.id), forKey: "id")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.name, forKey: "name")
+        aCoder.encodeCInt(Int32(self.id), forKey: "id")
     }
+    
 }

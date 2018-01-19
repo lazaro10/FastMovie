@@ -26,8 +26,7 @@ struct GenreMoviesNetworkGateway: GenreMoviesGateway {
     
     private func converterMovies(entity: GenreMovieCodable) -> [GenreMovie] {
         return entity.results.map({
-            GenreMovie(adult: $0.adult, backdropURL: URL(string: String.API.imageBaseURL+$0.backdropPath)!, genreIds: $0.genreIds, id: $0.id, originalLanguege: $0.originalLanguege, originalTitle: $0.originalTitle, overview: $0.overview, releaseDate: $0.releaseDate, posterUrl: URL(string: String.API.imageBaseURL+$0.posterPath)!, popularity: $0.popularity, title: $0.title, video: $0.video
-                , voteAverage: $0.voteAverage, voteCount: $0.voteCount)
+            GenreMovie(genreIds: $0.genreIds, id: $0.id, releaseDate: $0.releaseDate, posterUrl: URL(string: String.API.imageBaseURL+($0.posterPath ?? ""))!, title: $0.title, voteAverage: $0.voteAverage)
         })
     }
 }
