@@ -26,7 +26,7 @@ class GenresInterectorSpec: QuickSpec {
             context("When genres are called") {
                 
                 let genres = [Genre(id: 1, name: "Action"), Genre(id: 2, name: "Documentary"), Genre(id: 1, name: "Action")]
-                let neteworkError = NetworkError.offline
+                let networkError = NetworkError.offline
                 
                 it("Should that the saved genres are correct") {
                     
@@ -45,7 +45,7 @@ class GenresInterectorSpec: QuickSpec {
                 }
                 
                 it("Expect the correct result when the request fails") {
-                    gatewayMock.completionHandlerResult = Result.fail(neteworkError)
+                    gatewayMock.completionHandlerResult = Result.fail(networkError)
                     
                     interector.fetchGenres(completion: { (result) in
                         switch result {
