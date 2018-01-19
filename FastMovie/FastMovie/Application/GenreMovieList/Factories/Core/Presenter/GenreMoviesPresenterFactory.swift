@@ -6,10 +6,10 @@
 //  Copyright © 2018 Lázaro Lima dos Santos. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct GenreMoviesPresenterFactory {
-    static func make(delegate: GenreMoviesPresentation) -> GenreMoviesPresenter {
-        return GenreMoviesPresenter(delegate: delegate)
+    static func make(delegate: GenreMoviesPresentation, coordinator: UIViewController) -> GenreMoviesPresenter {
+        return GenreMoviesPresenter(delegate: delegate, coordinator: coordinator)
     }
 }

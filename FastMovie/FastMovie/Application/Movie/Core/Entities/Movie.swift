@@ -9,31 +9,43 @@
 import Foundation
 
 struct Movie {
-    let adult: Bool
-    let backdropPath: String
-    let budget: Float
+    let backdropURL: URL
     let genres: [Genre]
-    let homepage: String
-    let id: Int
-    let imbdId: String
-    let originalLanguege: String
-    let originalTitle: String
     let overview: String
-    let posterPath: String
-    let popularity: Float
+    let posterURL: URL
     let companies: [Companie]
     let countries: [Countrie]
     let releaseDate: String
-    let revenue: Float
-    let runtime: Int
-    let spokenLanguages: [SpokenLanguage]
-    let status: String
-    let tagline: String
     let title: String
-    let video: Bool
     let voteAverage: Float
-    let voteCount: Int
 
+    func getNamesGenres() -> String {
+        var names: String = ""
+        _ = genres.map {
+            names.append($0.name + ", ")
+        }
+        let namesFormatted = String(names.dropLast(2))
+        return namesFormatted
+    }
+    
+    func getNamesCompaies() -> String {
+        var names: String = ""
+        _ = companies.map {
+            names.append($0.name + ", ")
+        }
+        let namesFormatted = String(names.dropLast(2))
+        return namesFormatted
+    }
+    
+    func getNamesCountries() -> String {
+        var names: String = ""
+        _ = countries.map {
+            names.append($0.name + ", ")
+        }
+        let namesFormatted = String(names.dropLast(2))
+        return namesFormatted
+    }
+    
     struct Companie {
         let name: String
         let id: Int
@@ -42,10 +54,5 @@ struct Movie {
     struct Countrie {
         let iso: String
         let name: String
-    }
-    
-    struct SpokenLanguage {
-        let name: String
-        let iso: String
     }
 }

@@ -20,8 +20,7 @@ struct GenresInterector {
         gateway.genres { (result) in
             switch result {
             case .success(let genres):
-                DataSession.genres = genres
-            default:
+                DataSession.saveGenres(genres: genres)            default:
                 break
             }
             completion(result)

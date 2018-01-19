@@ -10,22 +10,17 @@ import Foundation
 
 struct GenreMovieCodable: Codable {
     
-    let id: Int
-    let page: Int
     let results: [GenreMovieCodable]
-    let total_pages: Int
-    let total_results: Int
-
     struct GenreMovieCodable: Codable {
         let adult: Bool
-        let backdropPath: String
+        let backdropPath: String?
         let genreIds: [Int]
         let id: Int
         let originalLanguege: String
         let originalTitle: String
         let overview: String
         let releaseDate: String
-        let posterPath: String
+        let posterPath: String?
         let popularity: Float
         let title: String
         let video: Bool
