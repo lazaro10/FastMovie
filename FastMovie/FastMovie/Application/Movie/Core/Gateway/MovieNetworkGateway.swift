@@ -1,5 +1,5 @@
 //
-//  MovieNeteworkGateway.swift
+//  MovieNetworkGateway.swift
 //  FastMovie
 //
 //  Created by Lázaro Lima dos Santos on 16/01/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MovieNeteworkGateway: MovieGateway {
+class MovieNetworkGateway: MovieGateway {
     
     private let getRequest: GetRequestable
     
