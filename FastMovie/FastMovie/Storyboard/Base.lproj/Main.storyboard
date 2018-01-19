@@ -144,9 +144,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K2-os-se4">
-                                <rect key="frame" x="26" y="306" width="39" height="22"/>
+                                <rect key="frame" x="45.5" y="306" width="0.0" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="39" id="7EQ-pN-KjH"/>
                                     <constraint firstAttribute="height" constant="22" id="JP2-2o-2tm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>

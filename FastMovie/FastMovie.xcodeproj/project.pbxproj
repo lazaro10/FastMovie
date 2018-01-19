@@ -10,11 +10,14 @@
 		DC15439EBB8C8414091B6D9F /* Pods_FastMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */; };
 		E362C5A42C4E35241F7A9BF3 /* Pods_FastMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A65C3DB0A00D65A4F3475E7 /* Pods_FastMovieTests.framework */; };
 		EC1C72AF200D32CB00D7120D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */; };
+		EC5FD3D92011AD39009643D2 /* GenresNetworkGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5FD3D82011AD39009643D2 /* GenresNetworkGatewaySpec.swift */; };
+		EC5FD3DC2011B24C009643D2 /* Genres.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DB2011B24C009643D2 /* Genres.json */; };
+		EC5FD3DE2011B80A009643D2 /* Error.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DD2011B80A009643D2 /* Error.json */; };
+		EC5FD3E02011C346009643D2 /* Empty.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5FD3DF2011C346009643D2 /* Empty.json */; };
 		ECC26257200D20240025DCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC26256200D20240025DCA1 /* AppDelegate.swift */; };
 		ECC2625C200D20240025DCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625A200D20240025DCA1 /* Main.storyboard */; };
 		ECC2625E200D20240025DCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625D200D20240025DCA1 /* Assets.xcassets */; };
 		ECC26261200D20240025DCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC2625F200D20240025DCA1 /* LaunchScreen.storyboard */; };
-		ECC2626C200D20240025DCA1 /* FastMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2626B200D20240025DCA1 /* FastMovieTests.swift */; };
 		ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */; };
 		ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */; };
 		ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */; };
@@ -101,6 +104,10 @@
 		8D3649E1AA26169EE5D29825 /* Pods_FastMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC7D83DCE8106677A50F42 /* Pods-FastMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastMovie/Pods-FastMovie.release.xcconfig"; sourceTree = "<group>"; };
 		EC1C72AE200D32CB00D7120D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC5FD3D82011AD39009643D2 /* GenresNetworkGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresNetworkGatewaySpec.swift; sourceTree = "<group>"; };
+		EC5FD3DB2011B24C009643D2 /* Genres.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Genres.json; sourceTree = "<group>"; };
+		EC5FD3DD2011B80A009643D2 /* Error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Error.json; sourceTree = "<group>"; };
+		EC5FD3DF2011C346009643D2 /* Empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Empty.json; sourceTree = "<group>"; };
 		ECC26253200D20240025DCA1 /* FastMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC26256200D20240025DCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC2625B200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +115,6 @@
 		ECC26260200D20240025DCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC26262200D20240025DCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECC26267200D20240025DCA1 /* FastMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECC2626B200D20240025DCA1 /* FastMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastMovieTests.swift; sourceTree = "<group>"; };
 		ECC2626D200D20240025DCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestable.swift; sourceTree = "<group>"; };
 		ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
@@ -260,6 +266,96 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		EC5FD3D22011ACBB009643D2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3D42011ACFF009643D2 /* GenreList */,
+				EC5FD3E12011C580009643D2 /* GenreMovieList */,
+				EC5FD3E22011C58D009643D2 /* Movie */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC5FD3D42011ACFF009643D2 /* GenreList */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3D52011AD0B009643D2 /* Scene */,
+				EC5FD3D62011AD14009643D2 /* Core */,
+			);
+			path = GenreList;
+			sourceTree = "<group>";
+		};
+		EC5FD3D52011AD0B009643D2 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EC5FD3D62011AD14009643D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3D72011AD21009643D2 /* Gateway */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC5FD3D72011AD21009643D2 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3D82011AD39009643D2 /* GenresNetworkGatewaySpec.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		EC5FD3DA2011B16B009643D2 /* JsonAux */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3DB2011B24C009643D2 /* Genres.json */,
+				EC5FD3DD2011B80A009643D2 /* Error.json */,
+				EC5FD3DF2011C346009643D2 /* Empty.json */,
+			);
+			path = JsonAux;
+			sourceTree = "<group>";
+		};
+		EC5FD3E12011C580009643D2 /* GenreMovieList */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3E32011C59E009643D2 /* Scene */,
+				EC5FD3E42011C5A5009643D2 /* Core */,
+			);
+			path = GenreMovieList;
+			sourceTree = "<group>";
+		};
+		EC5FD3E22011C58D009643D2 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		EC5FD3E32011C59E009643D2 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EC5FD3E42011C5A5009643D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FD3E52011C5AB009643D2 /* Gateway */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC5FD3E52011C5AB009643D2 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
 		ECC2624A200D20240025DCA1 = {
 			isa = PBXGroup;
 			children = (
@@ -297,7 +393,8 @@
 		ECC2626A200D20240025DCA1 /* FastMovieTests */ = {
 			isa = PBXGroup;
 			children = (
-				ECC2626B200D20240025DCA1 /* FastMovieTests.swift */,
+				EC5FD3DA2011B16B009643D2 /* JsonAux */,
+				EC5FD3D22011ACBB009643D2 /* Application */,
 				ECC2626D200D20240025DCA1 /* Info.plist */,
 			);
 			path = FastMovieTests;
@@ -834,6 +931,7 @@
 					};
 					ECC26266200D20240025DCA1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ECC26252200D20240025DCA1;
 					};
@@ -877,6 +975,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5FD3DE2011B80A009643D2 /* Error.json in Resources */,
+				EC5FD3DC2011B24C009643D2 /* Genres.json in Resources */,
+				EC5FD3E02011C346009643D2 /* Empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,7 +1152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC2626C200D20240025DCA1 /* FastMovieTests.swift in Sources */,
+				EC5FD3D92011AD39009643D2 /* GenresNetworkGatewaySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1232,11 +1333,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastMovieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FastShop.FastMovieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastMovie.app/FastMovie";
@@ -1249,6 +1352,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FastMovieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

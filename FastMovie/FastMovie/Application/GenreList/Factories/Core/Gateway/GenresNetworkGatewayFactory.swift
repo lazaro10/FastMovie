@@ -10,6 +10,6 @@ import Foundation
 
 struct GenresNetworkGatewayFactory {
     static func make() -> GenresGateway {
-        return GenresNetworkGateway(getRequest: GetRequestFactory.make())
+        return GenresNetworkGateway(url: String.API.baseURL+"genre/movie/list?api_key="+String.API.apiKey, getRequest: GetRequestFactory.make())
     }
 }
