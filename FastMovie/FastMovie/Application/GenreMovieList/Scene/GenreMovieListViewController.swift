@@ -14,7 +14,8 @@ class GenreMovieListViewController: UIViewController {
     fileprivate var genreId: Int!
     
     private var dataSource: CollectionDataSource<GenreMovieCollectionViewCell, GenreMovie>!
-    fileprivate lazy var presenter: GenreMoviesPresenter = GenreMoviesPresenterFactory.make(delegate: self, coordinator: self.navigationController!)
+    fileprivate lazy var presenter: GenreMoviesPresenter = GenreMoviesPresenterFactory.make(interector: GenreMoviesInterectorFactory.make(), delegate: self, coordinator: self.navigationController!)
+    
     private var movies: [GenreMovie] = [] {
         didSet {
             setDataSource(movies: movies)

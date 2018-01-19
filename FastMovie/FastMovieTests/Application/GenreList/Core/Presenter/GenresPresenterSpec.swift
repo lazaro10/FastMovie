@@ -17,7 +17,6 @@ class GenresPresenterSpec: QuickSpec {
         describe("GenresPresenterSpec") {
             
             var presenter: GenresPresenter!
-            
             var gatewayMock: GenresGatewayMock!
             var presentationMock: GenresPresentationMock!
             

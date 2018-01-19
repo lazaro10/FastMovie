@@ -9,7 +9,7 @@
 import UIKit
 
 struct GenreMoviesPresenterFactory {
-    static func make(delegate: GenreMoviesPresentation, coordinator: UIViewController) -> GenreMoviesPresenter {
-        return GenreMoviesPresenter(delegate: delegate, coordinator: coordinator)
+    static func make(interector: GenreMoviesInterector, delegate: GenreMoviesPresentation, coordinator: UIViewController) -> GenreMoviesPresenter {
+        return GenreMoviesPresenter(interector: interector, delegate: delegate, coordinator: coordinator)
     }
 }

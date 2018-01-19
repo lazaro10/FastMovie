@@ -30,6 +30,8 @@
 		ECC4F8C320126F3C00DF350D /* GenresPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8C220126F3C00DF350D /* GenresPresenterSpec.swift */; };
 		ECC4F8C62012707800DF350D /* GenresPresentationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8C52012707700DF350D /* GenresPresentationMock.swift */; };
 		ECC4F8CA20127E4200DF350D /* GenreMoviesPresentationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8C920127E4200DF350D /* GenreMoviesPresentationMock.swift */; };
+		ECC4F8CC20127F9000DF350D /* GenreMoviesPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8CB20127F9000DF350D /* GenreMoviesPresenterSpec.swift */; };
+		ECC4F8D02012819500DF350D /* MoviePresentationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC4F8CF2012819500DF350D /* MoviePresentationMock.swift */; };
 		ECF7BA35200E6BB9001F88C3 /* GetRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */; };
 		ECF7BA37200E6BCB001F88C3 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */; };
 		ECF7BA3B200E6C21001F88C3 /* GetRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */; };
@@ -140,6 +142,8 @@
 		ECC4F8C220126F3C00DF350D /* GenresPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenterSpec.swift; sourceTree = "<group>"; };
 		ECC4F8C52012707700DF350D /* GenresPresentationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresentationMock.swift; sourceTree = "<group>"; };
 		ECC4F8C920127E4200DF350D /* GenreMoviesPresentationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMoviesPresentationMock.swift; sourceTree = "<group>"; };
+		ECC4F8CB20127F9000DF350D /* GenreMoviesPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMoviesPresenterSpec.swift; sourceTree = "<group>"; };
+		ECC4F8CF2012819500DF350D /* MoviePresentationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresentationMock.swift; sourceTree = "<group>"; };
 		ECF7BA34200E6BB9001F88C3 /* GetRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestable.swift; sourceTree = "<group>"; };
 		ECF7BA36200E6BCB001F88C3 /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
 		ECF7BA3A200E6C21001F88C3 /* GetRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestFactory.swift; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 		EC5FD3EA2011CC27009643D2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ECC4F8CD2012816F00DF350D /* Presenter */,
 				ECC4F8A9201256B000DF350D /* Interector */,
 				EC5FD3EC2011CC75009643D2 /* Gateway */,
 			);
@@ -528,6 +533,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC4F8C820127E2200DF350D /* Mock */,
+				ECC4F8CB20127F9000DF350D /* GenreMoviesPresenterSpec.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -536,6 +542,22 @@
 			isa = PBXGroup;
 			children = (
 				ECC4F8C920127E4200DF350D /* GenreMoviesPresentationMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		ECC4F8CD2012816F00DF350D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4F8CE2012817C00DF350D /* Mock */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ECC4F8CE2012817C00DF350D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				ECC4F8CF2012819500DF350D /* MoviePresentationMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -1299,6 +1321,8 @@
 				ECC4F8BB201269D800DF350D /* GenresGatewayMock.swift in Sources */,
 				EC5FD3EE2011CDFC009643D2 /* MovieNeteworkGatewaySpec.swift in Sources */,
 				ECC4F8B4201262DC00DF350D /* GenreMoviesInterectorSpec.swift in Sources */,
+				ECC4F8D02012819500DF350D /* MoviePresentationMock.swift in Sources */,
+				ECC4F8CC20127F9000DF350D /* GenreMoviesPresenterSpec.swift in Sources */,
 				ECC4F8AD2012578000DF350D /* GenresInterectorSpec.swift in Sources */,
 				ECC4F8BD20126C2D00DF350D /* MovieInterectorSpec.swift in Sources */,
 				ECC4F8B92012696100DF350D /* GenreMoviesGatewayMock.swift in Sources */,
