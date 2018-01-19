@@ -1,5 +1,5 @@
 //
-//  MovieNeteworkGatewaySpec.swift
+//  MovieNetworkGatewaySpec.swift
 //  FastMovieTests
 //
 //  Created by Lázaro Lima dos Santos on 19/01/18.
@@ -13,19 +13,19 @@ import OHHTTPStubs
 
 @testable import FastMovie
 
-class MovieNeteworkGatewaySpec: QuickSpec {
+class MovieNetworkGatewaySpec: QuickSpec {
     override func spec() {
-        describe("MovieNeteworkGatewaySpec") {
+        describe("MovieNetworkGatewaySpec") {
             var gateway: MovieGateway!
             let host = "fastshop.com.br"
             let fakeApiPath = "https://\(host)/"
             
             beforeEach {
-                gateway = MovieNeteworkGatewayFactory.make()
+                gateway = MovieNetworkGatewayFactory.make()
             }
             
             context("Get Movie") {
-                let bundle = Bundle(for: MovieNeteworkGatewaySpec.self)
+                let bundle = Bundle(for: MovieNetworkGatewaySpec.self)
                 it("Should return a movie when the server response is a json object"){
                     
                     stub(condition: isHost(host), response: { (request) -> OHHTTPStubsResponse in

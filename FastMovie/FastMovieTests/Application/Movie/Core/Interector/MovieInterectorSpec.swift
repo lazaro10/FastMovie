@@ -24,10 +24,10 @@ class MovieInterectorSpec: QuickSpec {
             
             context("When movie are called") {
                 let movie = Movie(backdropURL: URL.init(string: "www.fastshop.com.br")!, genres: [], overview: "", posterURL: URL.init(string: "www.fastshop.com.br")!, companies: [], countries: [], releaseDate: "2017-06-05", title: "Title", voteAverage: 5.0)
-                let neteworkError = NetworkError.weakConnection
+                let networkError = NetworkError.weakConnection
                 
                 it("Expect the correct result when the request fails") {
-                    gatewayMock.completionHandlerResult = Result.fail(neteworkError)
+                    gatewayMock.completionHandlerResult = Result.fail(networkError)
                     
                     interector.fetchGenres(idMovie: 0, completion: { (result) in
                         switch result {
